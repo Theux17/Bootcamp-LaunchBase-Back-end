@@ -1,0 +1,43 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+    <title>Portfólio - Matheus</title>
+        
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+
+
+
+{% block content %}
+
+    <div id="box">
+        <h1>Aulas</h1>
+    </div>
+
+    <section class="cards"> 
+
+        {% for item in items %}
+        <div class="card {{'featured-wrapper' if item.featured}}" id="{{item.id}}">
+            <div class="card__image">
+                <img src="http://i3.ytimg.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem da aula de{{item.title}}">
+                {% if item.featured %}
+                    <div class="featured">Featured</div>
+                {% endif %}
+            </div>
+            <div class="card__contend">
+                <p>{{item.title}}</p>
+            </div>
+            <div class="card__info">
+                <p>{{item.duration}}</p>
+                <div class="card__price">{{item.price}}</div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </section>
+
+    <script src="/scripts.js"></script>
+
+{% endblock %}
