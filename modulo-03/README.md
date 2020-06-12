@@ -28,7 +28,7 @@ Projeto feito durante o módulo 03 do **Bootcamp-LaunchBase** da **Rocketseat**,
 # Clonar o repositório
  $ git clone https://github.com/Theux17/Bootcamp-LaunchBase-Back-end.git
 
-# Entrar no repositório
+# Entrar no diretório
 $ cd Bootcamp-Launchbase-Back-end
 
 # Ir até a pasta modulo-03
