@@ -7,21 +7,32 @@
     padding:0;
     border: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
+html, body {
+    min-height: 100vh;
+}
+
 body{
     font-family: 'Roboto';
     background: #000000f5;
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 header{
-    padding: 30px;
+    padding: 24px;
     border-bottom: 1px solid rgb(24, 23, 23);
     background: rgba(41, 39, 39, 0.178);
 
 }
 .links {
     text-align: center;
-
+    margin-bottom: 14px;
 }
 .links a {
     color: white;
@@ -42,6 +53,18 @@ header{
 #sobre{
     text-align: center;
     color: white;
+
+    animation: up 800ms ease-in-out
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: translateX(50px);
+        opacity: 1;
+    }
 }
 
 #sobre img {
@@ -75,6 +98,11 @@ header{
     padding-bottom: 10px;
 }
 
+#links-footer {
+    animation: up 800ms ease-in-out ;
+}
+
+
 #links-footer h3 {
     text-align: center;
     padding-bottom: 10px;
@@ -99,21 +127,38 @@ h1{
 }
 
 .cards{
-    max-width: 800px;
     margin: 0 auto;
     color:white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
-    cursor: pointer;
     text-align: center;
+}
+
+.card{
+    border-radius: 4px;
+    padding: 24px;
+    cursor: pointer;
+
+
+    animation: side 800ms ease-in-out;
+}
+
+@keyframes side{
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: translateY(50px);
+        opacity: 1;
+    }
 }
 
 
 .card:hover{
-    background: black;
     border: 1px solid green;
+    background: black;
 }
 
 .card__image{
@@ -244,7 +289,7 @@ footer {
     display: flex;
     flex-direction: column;
     background: rgba(41, 39, 39, 0.178);
-    margin-top: 14px;
+    margin-top: auto;
     padding: 8px;
     
     color: white;

@@ -23,7 +23,7 @@ server.get("/", function(req, res){
 
 server.get("/about", function (req, res) {
     const about = {
-        logo: "https://pbs.twimg.com/profile_images/953595371875422210/0pWsfSSp_400x400.jpg",
+        logo: "https://pbs.twimg.com/profile_images/1271517147349626881/Mf1UjRa0_400x400.jpg",
         name: "Rocketseat",
         description: "Empresa apaixonada em ensinar quem está iniciando no mundo Dev e quem já é Dev, conheça os nossos conteúdos nos links abaixo. O nosso objetivo é levar você ao próximo nível!",
         subtitle: "Tecnologias Utilizadas:",
@@ -38,7 +38,7 @@ server.get("/about", function (req, res) {
             { name: "instagram", url: "https://www.instagram.com/rocketseat_oficial/" },
             { name: "Facebok", url: "https://www.facebook.com/rocketseat" }
 
-
+            
         ]
     }
 
